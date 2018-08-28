@@ -3,7 +3,6 @@
 library(shiny)
 library(DT)
 library(qpcR)
-library(rapport)
 library(shinyBS)
 library(Matrix)
 
