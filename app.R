@@ -237,24 +237,6 @@ ui <- fluidPage(tags$head(tags$style(HTML('
 
 
 server <- function(input, output) {
-
-  ### Trade Analyzer
-  output$traderecall <- renderText({
-    
-    a <- paste("",
-               if(input$tradeB1 != "None") {input$tradeB1},
-               if(input$tradeB2 != "None") {paste("&",input$tradeB2)},
-               if(input$tradeB3 != "None") {paste("&",input$tradeB3)},
-               if(input$tradeB4 != "None") {paste("&",input$tradeB4)},
-               if(input$tradeB5 != "None") {paste("&",input$tradeB5)}, "\n","for","\n",
-               if(input$tradeA1 != "None") {input$tradeA1},
-               if(input$tradeA2 != "None") {paste("&",input$tradeA2)},
-               if(input$tradeA3 != "None") {paste("&",input$tradeA3)},
-               if(input$tradeA4 != "None") {paste("&",input$tradeA4)},
-               if(input$tradeA5 != "None") {paste("&",input$tradeA5)}
-    )
-    
-  })
   
   
   
