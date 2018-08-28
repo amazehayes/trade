@@ -2,7 +2,6 @@
 
 library(shiny)
 library(DT)
-library(qpcR)
 library(shinyBS)
 
 
@@ -22,13 +21,7 @@ rownames(schedule_home) <- schedule$Team
 rownames(schedule_bye) <- schedule$Team
 
 
-ui <- fluidPage(tags$head(tags$style(HTML('
-
-                                          .modal-lg {
-                                          width: 1200px;
-                                          
-                                          }
-                                          '))),
+ui <- fluidPage(
    
   titlePanel(title = NULL),
   h3("Redraft Trade Analyzer"),
