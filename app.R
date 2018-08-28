@@ -4,7 +4,7 @@ library(shiny)
 library(DT)
 library(qpcR)
 library(shinyBS)
-library(Matrix)
+
 
 
 ssdata <- read.csv("startsitdata.csv")
@@ -16,7 +16,7 @@ colnames(schedule) <- c("Team","Bye","1","2","3","4","5","6","7","8","9","10","1
                         "9","10","11","12","13","14","15","16","17")
 schedule_bye <- schedule[,1:2]
 schedule_team <- schedule[,3:19]
-schedule_home <- schedule[,c(20:36)]
+schedule_home <- schedule[,20:36]
 rownames(schedule_team) <- schedule$Team
 rownames(schedule_home) <- schedule$Team
 rownames(schedule_bye) <- schedule$Team
